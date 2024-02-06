@@ -26,6 +26,8 @@
 
 ### Numbers
 
+---
+
 ```
 x = 4
 
@@ -123,6 +125,8 @@ Decimal("0.1") + Decimal("0.1") + Decimal("0.1") - Decimal("0.3") ==> Decimal('0
 
 ### Set
 
+---
+
 ```
 >>> setone = {1,2,3,4 }
 >>> setone &  { 1,3 } ==>{1, 3} // Gives intersection
@@ -131,6 +135,8 @@ Decimal("0.1") + Decimal("0.1") + Decimal("0.1") - Decimal("0.3") ==> Decimal('0
 ```
 
 ### Boolean
+
+---
 
 ```
 >>> type(True)
@@ -141,4 +147,68 @@ True == 1 ==> True // Python treats True as 1
 True + 4 ==> 5 //  Python treats True as 1
 
 
+```
+
+### Strings
+
+---
+
+```
+name = "Gopal Adhikari"
+name  ==> 'Gopal Adhikari'
+
+first_char = name[0]
+first_char ==> 'G' // G is first character
+
+first_name = name[0:5]
+first_name ==> 'Gopal' // Gopal is first 5 characters
+
+number_list = "0123456789"
+number_list[:] ==> '0123456789'
+number_list[3:] ==> '3456789'
+number_list[3:7] ==> '3456'
+number_list[:7] ==> '0123456'
+number_list[0:10:2] ==> '0246
+
+x = '    Hello World   '
+>>> x.strip() ==> 'Hello World'
+
+>>> x.replace("World", "Gopal") ==>'    Hello Gopal   '
+
+names = "Lemon, Ginger, Masala, Mint"
+>>> names.split() ==> ['Lemon,', 'Ginger,', 'Masala,', 'Mint']
+
+>>> names.split(", ")
+['Lemon', 'Ginger', 'Masala', 'Mint']
+
+>>> names.find("Lemon") ==> 0
+>>> names.find("Mint")  ==> 23
+
+>>> names.find("Minte") ==> -1
+
+>>> name = "aaaa"
+>>> name.count("a") ==> 4
+
+>>> chai_variety = ["Lemon", "Masala","Ginger"]
+chai_variety ==> ['Lemon', 'Masala', 'Ginger']
+
+>>> print("".join(chai_variety)) ==> LemonMasalaGinger
+>>> print(" ".join(chai_variety)) ==> Lemon Masala Ginger
+
+>>> len(chai_variety) ==> 3
+
+he = "He said, \"samosa is awesome\""
+he ==> 'He said, "samosa is awesome"'
+
+>>> name = "Gopal\nAdhikari"
+>>> name ==> 'Gopal\nAdhikari'
+>>> print(name)
+Gopal
+Adhikari
+
+>>> name = r"Gopal\nAdhikari"
+>>> print(name) ==> Gopal\nAdhikari
+name ==> 'Gopal\\nAdhikari'
+
+"Gopal" in name ==> True
 ```
