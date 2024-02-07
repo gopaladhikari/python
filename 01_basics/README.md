@@ -211,4 +211,50 @@ Adhikari
 name ==> 'Gopal\\nAdhikari'
 
 "Gopal" in name ==> True
+
+```
+
+## Lists
+
+```
+>>> tea_variety = ["Black" , "Green", "Oolong", "White"]
+
+tea_variety[0] ==> 'Black'
+tea_variety[1] ==> 'Green'
+tea_variety[2] ==> 'Oolong'
+tea_variety[4] ==> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+tea_variety[-1] ==> 'White'
+tea_variety[:] ==> ['Black', 'Green', 'Oolong', 'White']
+
+tea_variety[0] = "Herbal"
+tea_variety ==> ['Herbal', 'Green', 'Oolong', 'White']
+
+tea_variety[1:1] ==>[]
+tea_variety[1:1] = ["test","test"] tea_variety ==> ['Herbal', 'test', 'test', 'Green', 'Oolong', 'White']
+
+tea_variety[1:3] = []
+tea_variety ===> ['Herbal', 'Green', 'Oolong', 'White'] // deleteing
+
+
+myList = [1,2,3]
+if 1 in myList :
+    print("Yes") // Yes
+>>> myList.append(4)
+myList ==> [1, 2, 3, 4]
+>>> if 1 in myList :
+...     print("I have") ==> I have
+
+> myList.remove(1)
+myList ==> [2, 3]
+
+myList.insert(1,10)
+myList ===> [2, 10, 3]
+
+myNewList = myList.copy()
+myNewList ==> [2, 10, 3]
+
+sqaured_nums = [ x ** 2 for x in range(10)] ==> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
 ```
