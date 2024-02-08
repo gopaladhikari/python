@@ -258,3 +258,69 @@ myNewList ==> [2, 10, 3]
 sqaured_nums = [ x ** 2 for x in range(10)] ==> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 ```
+
+### Dictionary
+
+```
+myDict = { "Masala" : "Spicy", "Ginger" : "Zesty", "Green" : "Mild"}
+
+myDict.get("Masala") ==> 'Spicy'
+
+myDict["Masala"] ==> 'Spicy'
+
+
+# If key is not available, using [] syntax gives error
+myDict["Masalaa"] ==> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Masalaa'
+
+myDict.get("Masalaa") // None , if key is not available .get syntax return nothing and doesnt throw error
+
+myDict ==> {'Masala': 'Spicy', 'Ginger': 'Zesty', 'Green': 'Mild'}
+myDict["Masala"] = "Fresh"
+myDict ==> {'Masala': 'Fresh', 'Ginger': 'Zesty', 'Green': 'Mild'} // Changing the value
+
+
+myDict ==> {'Masala': 'Fresh', 'Ginger': 'Zesty', 'Green': 'Mild'}
+>>> for chai in myDict:
+...     print(chai) // Prints the key
+...
+Masala
+Ginger
+Green
+
+
+>>> for chai in myDict:
+...     print(chai, myDict[chai]) // gives key and value
+...
+Masala Fresh
+Ginger Zesty
+Green Mild
+
+for key,value in myDict.items(): // Acessing key value directly
+...     print(key, value)
+...
+Masala Fresh
+Ginger Zesty
+Green Mild
+
+if "Masala" in myDict:
+...     print("Hurray")
+...
+==> Hurray
+
+myDict.pop("Masala") // remove key value
+'Fresh'
+myDict ==> {'Ginger': 'Zesty', 'Green': 'Mild'}
+
+myDict.popitem() // Delete last item
+myDict ==> {'Ginger': 'Zesty'}
+
+
+squared_nums = {x:x**2 for x in range(6) }
+squared_nums ==> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+squared_nums.clear() // clear the dictionary
+squared_nums ==> {}
+
+new_dict ==> {'Masala': 'Delicious', 'Ginger': 'Delicious', 'Lemon': 'Delicious'}
+```
