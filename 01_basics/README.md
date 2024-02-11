@@ -324,3 +324,27 @@ squared_nums ==> {}
 
 new_dict ==> {'Masala': 'Delicious', 'Ginger': 'Delicious', 'Lemon': 'Delicious'}
 ```
+
+### Tuple
+
+Immutable
+
+```
+person = ("Gopal", "Adhikari", 30)
+person ==> ('Gopal', 'Adhikari', 30)
+person[0]
+'Gopal'
+person[-1]
+30
+
+person[0:2] ==> ('Gopal', 'Adhikari')
+
+person[1] = "Hello"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+
+
+len(person) ==> 3
+
+```
