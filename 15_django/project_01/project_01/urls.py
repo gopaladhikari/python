@@ -1,5 +1,5 @@
 """
-URL configuration for myproject project.
+URL configuration for project_01 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -14,13 +14,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
 from django.urls import path
-from .views import homepage, aboutpage
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", homepage),
-    path("about/", aboutpage),
+    path('admin/', admin.site.urls),
 ]
